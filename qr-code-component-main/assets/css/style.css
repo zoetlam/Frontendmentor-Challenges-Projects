@@ -1,0 +1,70 @@
+/* White: hsl(0, 0%, 100%)
+Light gray: hsl(212, 45%, 89%)
+Grayish blue: hsl(220, 15%, 55%)
+Dark blue: hsl(218, 44%, 22%) */
+
+/* .outfit-<uniquifier > {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  padding: 0 20px;
+  text-align: center;
+}
+main,
+img {
+  border-radius: 20px;
+}
+main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(0, 0%, 100%);
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+}
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+h2 {
+  padding: 0 10px;
+}
+p {
+  padding: 0 10px;
+  color: hsl(220, 15%, 55%);
+}
+a{
+  text-decoration: none;
+}
+#new-ft:hover {
+  color: hsl(218, 44%, 22%) ;
+}
+
