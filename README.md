@@ -3,7 +3,7 @@ All the projects I've been building from Frontendmentor.io
 
 # QR Code Component
 
-(./requirement/qr-code-component.jpg)
+![Design preview for the Newsletter sign-up form with success message coding challenge](./requirement/qr-code-component.jpg)
 
 Challenge [link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/qr-code-component-main)
