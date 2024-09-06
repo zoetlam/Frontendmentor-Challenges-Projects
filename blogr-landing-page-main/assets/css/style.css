@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+* {
+  outline: none;
+}
+.red {
+  color: #f87777;
+}
+.black {
+  color: #484848;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.img100 {
+  width: 100%;
+  margin: auto;
+}
+body {
+  background-color: cadetblue;
+  padding: 0;
+  margin: 0 auto;
+}
+#testimonial h1 {
+  text-align: center;
+}
+.btn{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header,
+.log-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  padding: 0 50px;
+}
+
+nav {
+  display: flex;
+  height: 15vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  position: sticky;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: block;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 25px;
+}
+nav ul a:hover {
+  color: whitesmoke;
+  background-color: #f87777;
+  display: block;
+  font-weight: bold;
+}
+nav ul li ul {
+  display: inline;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  background-color: rgba(227, 225, 225, 0.5);
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 40px;
+}
+.btn * {
+  padding: 20px;
+}
