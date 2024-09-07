@@ -1,15 +1,87 @@
+/* -----------------Google fonts------------------- */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/*-------------------------------------------------  */
 * {
   box-sizing: border-box;
 }
 * {
   outline: none;
 }
-.red {
-  color: #f87777;
+a {
+  padding: 0;
+  margin: 0;
 }
-.black {
-  color: #484848;
-}
+
 .row::after {
   clear: both;
   content: "";
@@ -20,19 +92,87 @@
   margin: auto;
 }
 body {
-  background-color: cadetblue;
+  background-color: wheat;
   padding: 0;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  width: 1440px;
 }
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+/* Testimonial section */
+#testimonial {
+  color: white;
+  /* background-image: url(../../images/desktop/bg-pattern-intro-desktop.svg); */
+  min-height: 60vh;
+  position: relative;
+  background-size: contain;
+  background-image: linear-gradient(
+    hsl(355, 100%, 74%),
+    hsl(356, 100%, 66%),
+    hsl(356, 100%, 66%)
+  );
+  overflow: hidden;
+  border-radius: 0 0 0 100px;
+}
+/* move bg by this attribute */
+#testimonial .logo-container {
+  position: absolute;
+  right: 0;
+  top: -180%;
+  right: -40%;
+  z-index: 0;
+}
+/* ----------------------- */
+#testimonial .bg-container {
+  position: relative;
+  width: 2200px;
+  height: 2200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#testimonial .bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 #testimonial h1 {
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
-.btn{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+.btn p {
+  padding: 8px 20px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.btn p:active {
+  background-color: white;
+  color: hsl(356, 100%, 66%);
+  border-radius: 50px;
+  border-color: white;
+}
+.slogan .btn p {
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.btn p.active {
+  background-color: white;
+  color: hsl(356, 100%, 66%);
+  border-radius: 50px;
+  border-color: white;
+}
+
 header,
 .log-in {
   display: flex;
@@ -69,27 +209,27 @@ nav ul li a {
   padding: 10px 25px;
 }
 nav ul a:hover {
-  color: whitesmoke;
-  background-color: #f87777;
+  font-weight: bold;
   display: block;
   font-weight: bold;
 }
 nav ul li ul {
+  color: hsl(207, 13%, 34%);
   display: inline;
   position: absolute;
   left: 0;
-  width: 200%;
-  background-color: rgba(227, 225, 225, 0.5);
+  width: 150%;
+  background-color: hsl(0, 0%, 100%);
   z-index: 9999999;
   opacity: 0;
   visibility: hidden;
   transition: all 1s;
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 10% 10% black;
 }
 nav ul li:hover > ul {
   opacity: 1;
   visibility: visible;
   top: 40px;
-}
-.btn * {
-  padding: 20px;
 }
