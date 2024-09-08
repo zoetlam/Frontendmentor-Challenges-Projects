@@ -1,76 +1,4 @@
-/* -----------------Google fonts------------------- */
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
 
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-/*-------------------------------------------------  */
 * {
   box-sizing: border-box;
 }
@@ -81,7 +9,9 @@ a {
   padding: 0;
   margin: 0;
 }
-
+h1,h2,h3,h4{
+    font-weight: 400;
+}
 .row::after {
   clear: both;
   content: "";
@@ -91,21 +21,34 @@ a {
   width: 100%;
   margin: auto;
 }
+.title{
+    text-align: center;
+}
 body {
-  background-color: wheat;
+  background-color: hsl(0, 0%, 100%);
   padding: 0;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  width: 1440px;
+  /* width: 1440px; */
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8rem;
+  overflow-x: hidden;
 }
 .container {
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
+}
+.paragraph{
+    padding-top: 20px;
 }
 .center-div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section{
+    overflow: hidden;
 }
 /* Testimonial section */
 #testimonial {
@@ -263,4 +206,41 @@ nav ul li:hover > img {
 nav img{
     padding: 10px;
 }
+/* end testimonial */
+/* second section */
+#second-section{
+    /* height: 80vh; */
+    padding: 100px;
+}
+#second-section h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
 
+/* end second section */
+/* footer */
+footer{
+    background-color: hsl(240, 10%, 16%);
+}
+footer .container *{
+    color: white;
+    width: 30%;
+    
+}
+
+/* large screen responsive */
+@media screen and (min-width: 1400px) {
+    .container {
+      width: 1370px;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .container {
+      width: 1570px;
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    .container {
+      width: 1870px;
+    }
+  }
