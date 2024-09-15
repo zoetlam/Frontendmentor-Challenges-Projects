@@ -30,6 +30,7 @@ h4 {
 .title {
   text-align: center;
 }
+
 body {
   background-color: hsl(0, 0%, 100%);
   padding: 0;
@@ -278,4 +279,24 @@ footer a:hover{
   .container {
     width: 1870px;
   }
+}
+/* small devices */
+@media (max-width: 768px){
+
+  .container{
+    width: 85%;
+  }
+  #testimonial{
+    min-height: 100vh;
+  }
+  #testimonial h1{
+    font-size: 2.6rem;
+    line-height: 4rem;
+  }
+  .slogan>p{
+    margin-top: -10px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+
 }
