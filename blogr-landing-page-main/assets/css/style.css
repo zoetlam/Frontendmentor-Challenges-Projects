@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -9,8 +8,14 @@ a {
   padding: 0;
   margin: 0;
 }
-h1,h2,h3,h4{
-    font-weight: 400;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+.title-color {
+  color: hsl(208, 49%, 24%);
 }
 .row::after {
   clear: both;
@@ -21,8 +26,8 @@ h1,h2,h3,h4{
   width: 100%;
   margin: auto;
 }
-.title{
-    text-align: center;
+.title {
+  text-align: center;
 }
 body {
   background-color: hsl(0, 0%, 100%);
@@ -39,16 +44,16 @@ body {
   width: 95%;
   margin: 0 auto;
 }
-.paragraph{
-    padding-top: 20px;
+.paragraph {
+  padding-top: 20px;
 }
 .center-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section{
-    overflow: hidden;
+section {
+  overflow: hidden;
 }
 /* Testimonial section */
 #testimonial {
@@ -116,17 +121,17 @@ section{
   border: 1px solid white;
 }
 
-.btn p.active{
+.btn p.active {
   background-color: white;
   color: hsl(356, 100%, 66%);
   border-radius: 50px;
   border-color: white;
 }
-.btn p.active:hover{
-    color: white;
-    background-color: hsl(355, 100%, 74%);
-    border: none;
-    font-weight: 400;
+.btn p.active:hover {
+  color: white;
+  background-color: hsl(355, 100%, 74%);
+  border: none;
+  font-weight: 400;
 }
 
 header,
@@ -165,15 +170,15 @@ nav ul li a {
   text-decoration: none;
   display: block;
 }
-nav ul li ul li a{
-    padding-left: 10px;
+nav ul li ul li a {
+  padding-left: 10px;
 }
-.center-div>a:hover{
-    border-bottom: 1.5px solid white ;
-    cursor: pointer;
+.center-div > a:hover {
+  border-bottom: 1.5px solid white;
+  cursor: pointer;
 }
-nav ul li li a:hover{
-    font-weight: bold;
+nav ul li li a:hover {
+  font-weight: bold;
 }
 nav ul li ul {
   color: hsl(207, 13%, 34%);
@@ -188,59 +193,82 @@ nav ul li ul {
   transition: all 1s;
   border-radius: 10px;
   padding: 10px 0;
-  top: 37px;
-  box-shadow: 8px 5px 5px  hsl(240, 10%, 16%,0.5);
+  top: 40px;
+  box-shadow: 8px 5px 5px hsl(240, 10%, 16%, 0.5);
 }
 nav ul li:hover > ul {
   opacity: 1;
   visibility: visible;
-  top: 37px;
+  top: 40px;
   cursor: pointer;
 }
 nav ul li:hover > img {
-    transform: rotate(180deg);
-    cursor: pointer;
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 
-
-nav img{
-    padding: 10px;
+nav img {
+  padding: 10px;
 }
 /* end testimonial */
 /* second section */
-#second-section{
-    /* height: 80vh; */
-    padding: 100px;
+#second-section {
+  /* height: 80vh; */
+  padding: 100px;
 }
-#second-section h1{
-    font-size: 2rem;
-    font-weight: 400;
+#second-section h1 {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 /* end second section */
-/* footer */
-footer{
-    background-color: hsl(240, 10%, 16%);
+
+/* Third-section */
+#third-section {
+  color: hsl(0, 0%, 100%);
+  height: 60vh;
+  overflow: hidden;
+  background-color: hsl(237, 17%, 21%);
+  background-image: url("../../images/bg-pattern-circles.svg");
+  background-position: bottom 20% left -20%;
+  background-repeat: no-repeat;
 }
-footer .container *{
-    color: white;
-    width: 30%;
-    
+
+#third-section h1 {
+  font-size: 2rem;
+}
+#phone {
+  position: absolute;
+}
+
+/* end Third-section */
+/* fourth-section */
+#fourth-section{
+  
+}
+/* end Fourth-section */
+/* footer */
+footer {
+  background-color: hsl(240, 10%, 16%);
+}
+footer .container * {
+  color: white;
+  width: 30%;
 }
 
 /* large screen responsive */
 @media screen and (min-width: 1400px) {
-    .container {
-      width: 1370px;
-    }
+  .container {
+    width: 1370px;
   }
-  @media screen and (min-width: 1600px) {
-    .container {
-      width: 1570px;
-    }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1570px;
   }
-  @media screen and (min-width: 1900px) {
-    .container {
-      width: 1870px;
-    }
+}
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
   }
+}
