@@ -7,6 +7,7 @@
 a {
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 h1,
 h2,
@@ -174,8 +175,7 @@ nav ul li ul li a {
   padding-left: 10px;
 }
 .center-div > a:hover {
-  border-bottom: 1.5px solid white;
-  cursor: pointer;
+  text-decoration: underline;
 }
 nav ul li li a:hover {
   font-weight: bold;
@@ -232,6 +232,7 @@ nav img {
   background-image: url("../../images/bg-pattern-circles.svg");
   background-position: bottom 20% left -20%;
   background-repeat: no-repeat;
+  border-radius: 0 100px 0 100px;
 }
 
 #third-section h1 {
@@ -242,18 +243,24 @@ nav img {
 }
 
 /* end Third-section */
-/* fourth-section */
-#fourth-section{
-  
-}
-/* end Fourth-section */
 /* footer */
 footer {
   background-color: hsl(240, 10%, 16%);
+  border-radius: 0 100px 0 0;
 }
-footer .container * {
+footer .container div {
   color: white;
   width: 30%;
+  padding: 50px;
+}
+footer h3 {
+  font-weight: bold;
+}
+footer a{
+  display: block;
+}
+footer a:hover{
+  text-decoration: underline;
 }
 
 /* large screen responsive */
