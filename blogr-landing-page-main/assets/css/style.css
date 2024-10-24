@@ -1,8 +1,21 @@
-* {
+html {
   box-sizing: border-box;
+  font-size: 100%;
 }
-* {
-  outline: none;
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+:root{
+  --red: hsl(356, 100%, 66%);
+  --light-red: hsl(355, 100%, 74%);
+  --title: hsl(208, 49%, 24%);
+  --dark-gray-blue: hsl(237, 17%, 21%);
+  --dark-blue:hsl(207, 13%, 34%);
+  --bg-body: hsl(0, 0%, 100%);
+  --gray: hsl(240, 2%, 79%);
+  --bg-footer: hsl(240, 10%, 16%);
+  --fs-18: 1.125rem;
+  --fs-32: 2rem;
 }
 a {
   padding: 0;
@@ -16,7 +29,7 @@ h4 {
   font-weight: 400;
 }
 .title-color {
-  color: hsl(208, 49%, 24%);
+  color: var(--title);
 }
 .row::after {
   clear: both;
@@ -29,17 +42,18 @@ h4 {
 }
 .title {
   text-align: center;
+  font-size: var(--fs-32);
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--bg-body);
   padding: 0;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   /* width: 1440px; */
-  font-size: 16px;
+  font-size: var(--fs-18);
   font-weight: 300;
-  line-height: 1.8rem;
+  line-height: 1.56;
   overflow-x: hidden;
 }
 .container {
@@ -59,15 +73,15 @@ section {
 }
 /* Testimonial section */
 #testimonial {
-  color: white;
+  color: var(--bg-body);
   min-height: 60vh;
   position: relative;
   background-size: contain;
   background-image: linear-gradient(
     to right,
-    hsl(355, 100%, 74%),
-    hsl(356, 100%, 66%),
-    hsl(356, 100%, 66%)
+    var(--light-red),
+    var(--red),
+    var(--red)
   );
   overflow: hidden;
   border-radius: 0 0 0 100px;
@@ -113,25 +127,28 @@ section {
   cursor: pointer;
 }
 .btn p:active {
-  background-color: white;
-  color: hsl(356, 100%, 66%);
+  background-color: var(--bg-body);
+  color: var(--red);
   border-radius: 50px;
-  border-color: white;
+  border-color: var(--bg-body);
+}
+.slogan{
+  margin-bottom: 50px;
 }
 .slogan .btn p {
   border-radius: 50px;
-  border: 1px solid white;
+  border: 1px solid var(--bg-body);
 }
 
 .btn p.active {
-  background-color: white;
-  color: hsl(356, 100%, 66%);
+  background-color: var(--bg-body);
+  color: var(--red);
   border-radius: 50px;
-  border-color: white;
+  border-color:var(--bg-body);
 }
 .btn p.active:hover {
-  color: white;
-  background-color: hsl(355, 100%, 74%);
+  color:var(--bg-body);
+  background-color: var(--light-red);
   border: none;
   font-weight: 400;
 }
@@ -182,12 +199,12 @@ nav ul li li a:hover {
   font-weight: bold;
 }
 nav ul li ul {
-  color: hsl(207, 13%, 34%);
+  color: var(--dark-blue);
   display: inline;
   position: absolute;
   left: -10px;
   width: 150%;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--bg-body);
   z-index: 9999999;
   opacity: 0;
   visibility: hidden;
@@ -226,10 +243,10 @@ nav img {
 
 /* Third-section */
 #third-section {
-  color: hsl(0, 0%, 100%);
+  color: var(--bg-body);
   height: 60vh;
   overflow: hidden;
-  background-color: hsl(237, 17%, 21%);
+  background-color: var(--dark-gray-blue);
   background-image: url("../../images/bg-pattern-circles.svg");
   background-position: bottom 20% left -20%;
   background-repeat: no-repeat;
@@ -246,11 +263,11 @@ nav img {
 /* end Third-section */
 /* footer */
 footer {
-  background-color: hsl(240, 10%, 16%);
+  background-color: var(--bg-footer);
   border-radius: 0 100px 0 0;
 }
 footer .container div {
-  color: white;
+  color: var(--bg-body);
   width: 30%;
   padding: 50px;
 }
@@ -263,6 +280,19 @@ footer a{
 footer a:hover{
   text-decoration: underline;
 }
+
+.attribution {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  font-weight: bold;
+  color: hsl(228, 45%, 44%);
+}
+.attribution a:hover{
+  color: var(--dark-gray-blue);
+} 
 
 /* large screen responsive */
 @media screen and (min-width: 1400px) {
