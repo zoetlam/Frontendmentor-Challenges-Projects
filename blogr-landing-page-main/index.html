@@ -36,8 +36,7 @@
         <div style="position: relative">
           <div>
             <header id="header">
-              <nav>
-                <a href="#header"><img src="images/logo.svg" /></a>
+              <div class="off-screen-menu">
                 <ul>
                   <li class="center-div">
                     <a>Product</a><img src="images/icon-arrow-light.svg" />
@@ -67,10 +66,47 @@
                     </ul>
                   </li>
                 </ul>
+              </div>
+              <nav>
+                <a href="#header"><img src="images/logo.svg" /></a>
+                <ul class="mobile-none">
+                  <li class="center-div">
+                    <a>Product</a><img src="images/icon-arrow-light.svg" />
+                    <ul>
+                      <li><a>Overview</a></li>
+                      <li><a>Pricing</a></li>
+                      <li><a>Marketplace</a></li>
+                      <li><a>Features</a></li>
+                      <li><a>Integrations</a></li>
+                    </ul>
+                  </li>
+                  <li class="center-div">
+                    <a>Company</a><img src="images/icon-arrow-light.svg" />
+                    <ul>
+                      <li><a>About</a></li>
+                      <li><a>Team</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Careers</a></li>
+                    </ul>
+                  </li>
+                  <li class="center-div">
+                    <a>Contact</a><img src="images/icon-arrow-light.svg" />
+                    <ul>
+                      <li><a>Connect</a></li>
+                      <li><a>Newsletter</a></li>
+                      <li><a>LinkedIn</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </nav>
-              <div class="log-in btn">
+              <div class="log-in btn mobile-none">
                 <p><a>Login</a></p>
                 <p class="active"><a>Sign Up</a></p>
+              </div>
+              <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </header>
             <div class="slogan" style="text-align: center; margin-top: 60px;">
@@ -173,5 +209,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/zoetlam">Zoe T. Lam</a>.
     </div>
+    <script src="assets/index.js"></script>
   </body>
 </html>

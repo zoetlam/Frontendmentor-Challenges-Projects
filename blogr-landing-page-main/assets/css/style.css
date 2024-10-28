@@ -162,6 +162,60 @@ header,
 header {
   padding: 0 50px;
 }
+.off-screen-menu{
+  background-color: var(--bg-body);
+  color: var(--dark-blue);
+  height: 80vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 15%;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.off-screen-menu.active{
+  right: 0;
+}
+.ham-menu{
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+}
+.ham-menu span{
+  height: 5px;
+  width: 100%;
+  background-color: var(--bg-body);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1){
+  top: 25%;
+}
+.ham-menu span:nth-child(3){
+  top: 75%;
+}
+.ham-menu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2){
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 nav {
   display: flex;
@@ -231,7 +285,6 @@ nav img {
 /* end testimonial */
 /* second section */
 #second-section {
-  /* height: 80vh; */
   padding: 100px;
 }
 #second-section h1 {
@@ -312,9 +365,14 @@ footer a:hover{
 }
 /* small devices */
 @media (max-width: 768px){
-
+  .mobile-none{
+    display: none;
+  }
+  .ham-menu{
+    display: block;
+  }
   .container{
-    width: 85%;
+    width: 100%;
   }
   #testimonial{
     min-height: 100vh;
