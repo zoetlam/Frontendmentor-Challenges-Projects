@@ -44,6 +44,11 @@ h4 {
   text-align: center;
   font-size: var(--fs-32);
 }
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
   background-color: var(--bg-body);
@@ -163,6 +168,7 @@ header {
   padding: 0 50px;
 }
 .off-screen-menu{
+  border-radius: 20px;
   background-color: var(--bg-body);
   color: var(--dark-blue);
   height: 80vh;
@@ -173,11 +179,25 @@ header {
   right: -450px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
+.off-screen-menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.off-screen-menu ul li ul{
+  background-color: var(--gray);
+  display: none;
+}
+.off-screen-menu ul li .flex a{
+  margin-right: 10px;
+  font-weight: 400;
+}
+
 .off-screen-menu.active{
   right: 0;
 }
@@ -234,16 +254,16 @@ nav ul {
   padding-left: 50px;
   display: flex;
 }
-nav ul li {
+nav ul li, .off-screen-menu ul li {
   display: block;
   position: relative;
   padding: 10px;
 }
-nav ul li a {
+nav ul li a, .off-screen-menu ul li a {
   text-decoration: none;
   display: block;
 }
-nav ul li ul li a {
+nav ul li ul li a{
   padding-left: 10px;
 }
 .center-div > a:hover {
@@ -252,7 +272,7 @@ nav ul li ul li a {
 nav ul li li a:hover {
   font-weight: bold;
 }
-nav ul li ul {
+nav ul li ul{
   color: var(--dark-blue);
   display: inline;
   position: absolute;

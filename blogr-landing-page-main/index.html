@@ -23,7 +23,7 @@
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
-    <section id="testimonial"> 
+    <section id="testimonial">
       <div class="container">
         <div class="logo-container">
           <div class="bg-container">
@@ -39,7 +39,9 @@
               <div class="off-screen-menu">
                 <ul>
                   <li class="center-div">
-                    <a>Product</a><img src="images/icon-arrow-light.svg" />
+                    <div class="flex">
+                      <a>Product</a><img src="images/icon-arrow-dark.svg" />
+                    </div>
                     <ul>
                       <li><a>Overview</a></li>
                       <li><a>Pricing</a></li>
@@ -49,7 +51,7 @@
                     </ul>
                   </li>
                   <li class="center-div">
-                    <a>Company</a><img src="images/icon-arrow-light.svg" />
+                    <div class="flex"><a>Company</a><img src="images/icon-arrow-dark.svg" /></div>
                     <ul>
                       <li><a>About</a></li>
                       <li><a>Team</a></li>
@@ -58,13 +60,17 @@
                     </ul>
                   </li>
                   <li class="center-div">
-                    <a>Contact</a><img src="images/icon-arrow-light.svg" />
+                    <div class="flex"><a>Contact</a><img src="images/icon-arrow-dark.svg" /></div>
                     <ul>
                       <li><a>Connect</a></li>
                       <li><a>Newsletter</a></li>
                       <li><a>LinkedIn</a></li>
                     </ul>
                   </li>
+                  <hr>
+                  <p><a>Login</a></p>
+                  <p><a>Sign Up</a></p>
+                  
                 </ul>
               </div>
               <nav>
@@ -109,10 +115,8 @@
                 <span></span>
               </div>
             </header>
-            <div class="slogan" style="text-align: center; margin-top: 60px;">
-              <h1>
-                A modern publishing platform 
-              </h1>
+            <div class="slogan" style="text-align: center; margin-top: 60px">
+              <h1>A modern publishing platform</h1>
               <p>Grow your audience and build your online brand</p>
               <div class="btn">
                 <p class="active"><a>Start for Free</a></p>
@@ -126,56 +130,90 @@
     <section id="second-section">
       <div class="container">
         <h1 class="title-color title">Designed for the future</h1>
-        <div class="container" style="display: flex; margin-top: 50px;">
-          <div style="width: 60%;">
+        <div class="container" style="display: flex; margin-top: 50px">
+          <div style="width: 60%">
             <div class="paragraph">
               <h2 class="title-color">Introducing an extensible editor</h2>
-              <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
             </div>
             <div class="paragraph">
               <h2 class="title-color">Robust content management</h2>
-              <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+              <p>
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
             </div>
           </div>
-          <div style="width: 40%; margin-top: -120px;">
-            <img src="images/desktop/illustration-editor-desktop.svg" alt="">
+          <div style="width: 40%; margin-top: -120px">
+            <img src="images/desktop/illustration-editor-desktop.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
     <section id="third-section" class="center-div">
-        <div class="container" style="display: flex;">
-          <div class="center-div" style="width: 50%;">
-            <img src="images/illustration-phones.svg" alt="phone" id="phone" >
-          </div>
-          <div style="width: 40%;">
-            <h1>State of the Art Infrastructure</h1>
-            <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-          </div>
+      <div class="container" style="display: flex">
+        <div class="center-div" style="width: 50%">
+          <img src="images/illustration-phones.svg" alt="phone" id="phone" />
         </div>
+        <div style="width: 40%">
+          <h1>State of the Art Infrastructure</h1>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
     </section>
 
-     <section id="fourth-section" class="center-div">
-      <div style="width: 50%;" class="center-div">
-        <img src="images/desktop/illustration-laptop-desktop.svg" alt="illustrator-laptop" style="margin: 100px 0 100px -40%;">
+    <section id="fourth-section" class="center-div">
+      <div style="width: 50%" class="center-div">
+        <img
+          src="images/desktop/illustration-laptop-desktop.svg"
+          alt="illustrator-laptop"
+          style="margin: 100px 0 100px -40%"
+        />
       </div>
-      <div style="width: 40%;">
+      <div style="width: 40%">
         <div>
           <h2 class="title-color">Free, open, simple</h2>
-          <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
         </div>
         <div>
           <h2 class="title-color">Powerful tooling</h2>
-          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
         </div>
-        
       </div>
-
-     </section>
-    <footer >
-      <div class="container" style="display: flex;">
-        <div style="text-align: center;">
-          <img src="images/logo.svg" alt="blogr-logo" style="margin-top: 20px;">
+    </section>
+    <footer>
+      <div class="container" style="display: flex">
+        <div style="text-align: center">
+          <img
+            src="images/logo.svg"
+            alt="blogr-logo"
+            style="margin-top: 20px"
+          />
         </div>
         <div>
           <h3>Product</h3>
@@ -198,10 +236,8 @@
           <p><a>Newsletter</a></p>
           <p><a>LinkedIn</a></p>
         </div>
-    </div>
+      </div>
     </footer>
-               
-           
 
     <div class="attribution">
       Challenge by
