@@ -412,22 +412,6 @@ footer a:hover{
   color: var(--dark-gray-blue);
 } 
 
-/* large screen responsive */
-@media screen and (min-width: 1400px) {
-  .container {
-    width: 1370px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .container {
-    width: 1570px;
-  }
-}
-@media screen and (min-width: 1900px) {
-  .container {
-    width: 1870px;
-  }
-}
 /* small devices */
 @media (max-width: 768px){
   body{
