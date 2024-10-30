@@ -79,7 +79,6 @@
                     <a><strong>Login</strong></a>
                   </p>
                   <div style="display: flex;
-                  text-align: center;
                   align-items: center;
                   justify-content: center;">
                     <p class="signUp"><a>Sign Up</a></p>
@@ -141,10 +140,10 @@
       </div>
     </section>
     <section id="second-section">
-      <div class="container">
+      <div class="container mt-100">
         <h1 class="title-color title">Designed for the future</h1>
-        <div class="container" style="display: flex; margin-top: 50px">
-          <div style="width: 60%">
+        <div class="wrap" style="display: flex;">
+          <div class="w-60">
             <div class="paragraph">
               <h2 class="title-color">Introducing an extensible editor</h2>
               <p>
@@ -166,18 +165,19 @@
               </p>
             </div>
           </div>
-          <div style="width: 40%; margin-top: -120px">
-            <img src="images/desktop/illustration-editor-desktop.svg" alt="" />
+          <div class="w-40">
+            <img src="images/desktop/illustration-editor-desktop.svg" alt="illustration-editor" class="mobile-none"  style="margin-top: -120px"/>
+            <img src="images/mobile/illustration-editor-mobile.svg" alt="illustration-editor" class="desktop-none">
           </div>
         </div>
       </div>
     </section>
-    <section id="third-section" class="center-div">
-      <div class="container" style="display: flex">
-        <div class="center-div" style="width: 50%">
-          <img src="images/illustration-phones.svg" alt="phone" id="phone" />
+    <section id="third-section" class="center-div mt-100">
+      <div class="container wrap" style="display: flex">
+        <div class="center-div w-50 phone-container">
+          <img src="images/illustration-phones.svg" alt="phone" id="phone"/>
         </div>
-        <div style="width: 40%">
+        <div class="w-40">
           <h1>State of the Art Infrastructure</h1>
           <p>
             With reliability and speed in mind, worldwide data centers provide
@@ -190,14 +190,17 @@
     </section>
 
     <section id="fourth-section" class="center-div">
-      <div style="width: 50%" class="center-div">
+      <div class="w-50">
         <img
           src="images/desktop/illustration-laptop-desktop.svg"
           alt="illustrator-laptop"
-          style="margin: 100px 0 100px -40%"
+          style="margin: 100px 0 100px -40%" class="mobile-none"
         />
+        <div class="center-div desktop-none mt-100"><img
+          src="images/mobile/illustration-laptop-mobile.svg" class="desktop-none"/></div>
+        
       </div>
-      <div style="width: 40%">
+      <div class="w-40">
         <div>
           <h2 class="title-color">Free, open, simple</h2>
           <p>
@@ -220,8 +223,8 @@
       </div>
     </section>
     <footer>
-      <div class="container" style="display: flex">
-        <div style="text-align: center">
+      <div class="container wrap" style="display: flex">
+        <div>
           <img
             src="images/logo.svg"
             alt="blogr-logo"

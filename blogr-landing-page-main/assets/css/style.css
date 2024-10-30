@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 *, *::before, *::after{
   box-sizing: inherit;
@@ -17,11 +17,15 @@ html {
   --bg-footer: hsl(240, 10%, 16%);
   --fs-18: 1.125rem;
   --fs-32: 2rem;
+  --width-60: 60%;
 }
 a {
   padding: 0;
   margin: 0;
   cursor: pointer;
+}
+.mt-100{
+  margin-top: 100px!important;
 }
 h1,
 h2,
@@ -50,13 +54,15 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-
+.desktop-none{
+  display: none;
+}
 body {
   background-color: var(--bg-body);
   padding: 0;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  /* width: 1440px; */
+  max-width: 1440px;
   font-size: var(--fs-18);
   font-weight: 300;
   line-height: 1.56;
@@ -335,9 +341,17 @@ nav img {
 }
 /* end testimonial */
 /* second section */
-#second-section {
-  padding: 100px;
+
+.w-60{
+  width: 60%;
 }
+.w-50{
+  width: 50%;
+}
+.w-40{
+  width: 40%;
+}
+
 #second-section h1 {
   font-size: 2rem;
   font-weight: 400;
@@ -416,14 +430,17 @@ footer a:hover{
 }
 /* small devices */
 @media (max-width: 768px){
+  body{
+    text-align: center;
+  }
+  .desktop-none{
+    display: block;
+  }
   .mobile-none{
     display: none;
   }
   .ham-menu, .off-screen-menu{
     display: block;
-  }
-  .container{
-    width: 100%;
   }
   #testimonial{
     min-height: 100vh;
@@ -437,5 +454,48 @@ footer a:hover{
     font-size: 1.2rem;
     font-weight: lighter;
   }
-
+  .wrap{
+    flex-direction: column;
+  }
+  #second-section .wrap{
+    margin-bottom: 100px;
+  }
+  #second-section .wrap :nth-child(1) { order: 2; }
+  #second-section .wrap :nth-child(2) { order: 1;}
+  #second-section .wrap :nth-child(2) img{
+    width: 100%;
+  }
+  #third-section {
+    background-position: center bottom -70%;
+    overflow: visible;
+    min-height: 100vh;
+  }
+  #phone{
+    width: 95%;
+  }
+  #third-section .phone-container{
+    height: 400px;
+    margin-top: -300px;
+  }
+  
+.w-40, .w-60, .w-50{
+    width: 100%!important;
+  }
+  #fourth-section.center-div{
+    display: block;
+  }
+  #fourth-section .w-40{
+    padding: 0 1rem 100px;
+  }
+  footer .container div {
+    color: var(--bg-body);
+    width: 100%;
+    padding: 10px;
+  }
+  footer .container div h3{
+    padding-bottom: 6px;
+  }
+  footer .container div img{
+    padding-top: 30px;
+  }
 }
