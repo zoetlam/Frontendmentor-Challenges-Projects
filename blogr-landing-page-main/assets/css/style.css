@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  overflow-x: hidden;
 }
 *, *::before, *::after{
   box-sizing: inherit;
@@ -94,7 +95,6 @@ section {
 /* move bg by this attribute */
 #testimonial .logo-container {
   position: absolute;
-  right: 0;
   top: -90%;
   right: -10%;
   z-index: 0;
@@ -176,7 +176,7 @@ header {
   max-width: calc(100% - 3rem);
   position: fixed;
   top: 15%;
-  right: -4500000px;
+  left: -4500000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,6 +208,21 @@ header {
 .off-screen-menu ul li ul.show{
   display: block;
 }
+.off-screen-menu ul .signUp{
+  cursor: pointer;
+  width: 40%;
+  background-image: linear-gradient(
+    to right,
+    var(--light-red),
+    var(--red),
+    var(--red)
+  );
+  margin: 0;
+  padding: 10px 5px;
+  border-radius: 30px;
+  color: var(--bg-body);
+  font-weight: 700;
+}
 .rotate{
   transition: transform 0.3s ease;
 }
@@ -215,7 +230,7 @@ header {
   transform: rotate(180deg);
 }
 hr{
-  width: calc(100% - 8rem);
+  width: calc(100% - 2rem);
 }
 .ham-menu{
   display: none;
