@@ -16,4 +16,5 @@ Challenge [link](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2
 
 <img src="/requirement/interactive-card-details-form.jpg" alt="image" width="600" height="auto">
 
-Challenge [link](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/interactive-card-details-form/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/interactive-card-details-form/)``
+Challenge [link](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/interactive-card-details-form/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/interactive-card-details-form/)
+
