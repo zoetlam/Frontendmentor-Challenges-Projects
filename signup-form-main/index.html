@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/7798254451.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translate(-50%, -50%);
+      }
+      .attribution a {
+        color: #fdfd9a;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <main id="sign-up" class="">
+      <div id="mobile-img">
+        <img src="assets/images/illustration-sign-up-mobile.svg" />
+      </div>
+      <div class="content-area">
+        <h1 class="bold">Stay updated!</h1>
+
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="bullet">
+          <p>
+            <i class="fa fa-check-circle orange"></i>Product discovery and
+            building what matters
+          </p>
+          <p>
+            <i class="fa fa-check-circle orange"></i>Measuring to ensure updates
+            are a success
+          </p>
+          <p><i class="fa fa-check-circle orange"></i>And much more!</p>
+        </div>
+        <div class="submit">
+          <form action="#">
+            <div class="space-between">
+              <label class="bold">Email address</label>
+              <label class="bold orange" id="email-error"></label>
+            </div>
+            <input
+              id="email-field"
+              spellcheck="false"
+              placeholder="email@company.com"
+            />
+            <button class="bold" type="submit" onclick="emailCheck()">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="img-area" class="">
+        <img src="assets/images/illustration-sign-up-desktop.svg" />
+      </div>
+    </main>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <section id="success-popup" class="hidden">
+      <i class="fa fa-check-circle orange fa-3x"></i>
+      <h1 class="bold">Thanks for subscribing!</h1>
+
+      <p>
+        A confirmation email has been sent to
+        <span class="bold">ash@loremcompany.com</span>. Please open it and click
+        the button inside to confirm your subscription.
+      </p>
+
+      <button id="dismiss" onclick="reload()">Dismiss message</button>
+    </section>
+    <!-- Success message end -->
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">ZoeTLam</a>.
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

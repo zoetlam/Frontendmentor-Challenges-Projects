@@ -18,3 +18,8 @@ Challenge [link](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2
 
 Challenge [link](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/interactive-card-details-form/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/interactive-card-details-form/)
 
+# Newsletter sign-up form with success message
+
+<img src="/requirement/signup-form-main.jpg" alt="image" width="600" height="auto">
+
+Challenge [link](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/signup-form-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/signup-form-main/)
