@@ -563,11 +563,6 @@ video {
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
-.bg-green-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
