@@ -35,7 +35,7 @@ jobs:
 
     - name: Build Tailwind CSS
       run: |
-        npx tailwindcss -i ./assets/css/styles.css -o ./assets/css/tailwind.css --minify  # Run the build process for Tailwind
+        npx tailwindcss -i ./assets/css/style.css -o ./assets/css/tailwind.css --minify  # Run the build process for Tailwind
 
     - name: Build site
       run: |
