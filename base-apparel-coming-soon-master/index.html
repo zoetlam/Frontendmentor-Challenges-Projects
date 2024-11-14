@@ -40,20 +40,24 @@
       style="min-height: 95vh"
     >
       <div id="logo"
-        class="main-content w-3/5"
+        class="main-content lg:w-3/5"
         style="background-image: url(assets/images/bg-pattern-desktop.svg)"
       >
         <img src="assets/images/logo.svg" alt="website-logo" class="m-[50px]"/>
+        <img src="assets/images/hero-mobile.jpg" alt="" class="sm:block lg:hidden w-full">
         <div class="m-[50px]">
           <h1
-            class="uppercase text-pink-red text-5xl tracking-widest font-extralight leading-tight pt-4"
+            class="uppercase text-pink-red text-4xl text-center lg:text-left lg:text-5xl tracking-widest font-extralight leading-tight pt-4"
           >
             We're
           </h1>
-          <h1 class="uppercase text-6xl text-dark-red tracking-widest leading-tight pb-6">
+          <h1 class="uppercase text-5xl text-center lg:text-left lg:text-6xl text-dark-red tracking-widest leading-tight pb-6 md:hidden lg:block">
             Coming <br />soon
           </h1>
-          <div class="mr-[40px] flex">
+          <h1 class="uppercase text-5xl text-center lg:text-left lg:text-6xl text-dark-red tracking-widest leading-tight pb-6 hidden md:block lg:hidden">
+            Coming soon
+          </h1>
+          <div class="mr-[40px] flex text-center lg:text-left">
             <p class="text-pink-red text-sm">Hello fellow shoppers! We're currently building our new fashion store.
               Add your email below to stay up-to-date with announcements and our
               launch deals.</p>
@@ -70,7 +74,7 @@
       <img
         src="assets/images/hero-desktop.jpg"
         alt="main-picture-model"
-        class="w-2/5"
+        class="lg:w-2/5 hidden lg:block"
       />
     </div>
     <footer class="pt-3">
