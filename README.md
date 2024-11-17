@@ -29,3 +29,9 @@ Challenge [link](https://www.frontendmentor.io/challenges/newsletter-signup-form
 <img src="/requirement/base-apparel-coming-soon-master.jpg" alt="image" width="600" height="auto">
 
 Challenge [link](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/base-apparel-coming-soon-master/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/base-apparel-coming-soon-master/)
+
+# News homepage
+
+<img src="/requirement/news-homepage-main.jpg" alt="image" width="600" height="auto">
+
+Challenge [link](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/news-homepage-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/news-homepage-main/)

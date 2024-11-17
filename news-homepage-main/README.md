@@ -1,6 +1,6 @@
 # Frontend Mentor - News homepage
 
-![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
+![Design preview for the News homepage coding challenge](.././requirement/news-homepage-main.jpg)
 
 ## Welcome! 👋
 
