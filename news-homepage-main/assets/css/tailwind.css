@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+    h1 {
+      @apply text-4xl; /* Use any Tailwind utility class */
+    }
+    #menu li {
+        @apply px-4 hidden lg:block hover:text-soft-red; /* Use any Tailwind utility class */
+      }
+  }
