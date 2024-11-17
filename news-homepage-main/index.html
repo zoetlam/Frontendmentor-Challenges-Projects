@@ -11,19 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
 
-  
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 13px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <div class="container mx-auto px-4 lg:px-0 max-w-screen-lg">
+  <div id="off-screen-menu" class="lg:hidden flex fixed w-full z-50 top-0 min-h-screen right-[-100%]">
+    <div class="w-1/3 backdrop-contrast-50">
+    </div>
+    <div class="w-2/3 bg-off-white flex flex-col relative">
+      <a href="#" onclick="closeMenu()" class="p-8"><img src="assets/images/icon-menu-close.svg" alt="icon-menu-close" class="w-12 object-cover float-right" id="closeButton"></a>
+      <ul class="text-dark-blue absolute" style="left: calc(50% - 100px); top: 50%; transform: translateY(-50%);">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </div>
+  </div>
+  <section class="container mx-auto px-4 lg:px-0 max-w-screen-lg relative">
     <nav class="flex items-end justify-between mb-8">
       <img src="assets/images/logo.svg" alt="logo" class="pt-4">
       <ul class="flex text-dark-grayish-blue" id="menu">
@@ -33,74 +45,76 @@
         <li><a href="#">Trending</a></li>
         <li><a href="#">Categories</a></li>
       </ul>
-      <div id="toggle-icon" class="relative lg:hidden">
-        <span class="bg-dark-blue"></span>
-        <span class="bg-dark-blue"></span>
-        <span class="bg-dark-blue"></span>
+      <div id="toggle-icon" class="lg:hidden flex items-center justify-center">
+        <a href="#" onclick="menuShowUp()"><img src="assets/images/icon-menu.svg" alt="icon-menu"></a>
       </div>
+      
     </nav>
     <div class="lg:flex">
       <div class="lg:w-2/3 px-2">
-        <img src="assets/images/image-web-3-desktop.jpg" alt="main-banner" class="mb-8">
+        <img src="assets/images/image-web-3-mobile.jpg" alt="main-banner" class="mb-8 block lg:hidden">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="main-banner" class="mb-8 hidden lg:block">
         <div class="lg:flex lg:flex-row mb-8">
-          <h1 class="lg:w-1/2 text-6xl font-extrabold">The Bright Future of Web 3.0?</h1>
+          <h1 class="lg:w-1/2 text-5xl lg:text-6xl font-extrabold">The Bright Future of Web 3.0?</h1>
           <div class="lg:w-1/2 lg:flex lg:flex-col justify-between">
-            <p class="text-dark-grayish-blue pt-2">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            <p class="pt-2">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
               But is it really fulfilling its promise?</p>
               <button class="bg-soft-red text-dark-blue font-bold hover:bg-dark-blue hover:text-grayish-blue py-2 w-1/2 text-lg uppercase tracking-widest mt-6">Read more</button>
           </div>
         </div>
-        
-
-        
       </div>
-      <div class="lg:w-1/3 px-8 bg-dark-blue text-off-white p-4">
+      <!-- end banner -->
+      <div class="lg:w-1/3 px-8 bg-dark-blue text-off-white p-4" id="feature">
         <h1 class="text-soft-orange text-5xl mt-3">New</h1> 
         <div class="py-5">
-          <h1 class="font-bold py-2 text-lg">Hydrogen VS Electric Cars</h1>
-          <p class="text-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <h1 class="font-bold py-2 text-lg"><a href="#" class="hover:text-soft-orange">Hydrogen VS Electric Cars</a></h1>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div> 
         <hr>
         <div class="py-5"> 
-          <h1 class="font-bold py-2 text-lg"> Downsides of AI Artistry</h1>
-          <p class="text-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+          <h1 class="font-bold py-2 text-lg"><a href="#" class="hover:text-soft-orange">Downsides of AI Artistry</a></h1>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
         </div>
         <hr>
         <div class="py-5">
-          <h1 class="font-bold py-2 text-lg">Funding Drying Up?</h1>
-          <p class="text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          <h1 class="font-bold py-2 text-lg"><a href="#" class="hover:text-soft-orange">Funding Drying Up?</a></h1>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
       </div>
 
     </div>
-    <div class="lg:flex lg:flex-row my-16">
-      <div class="flex">
-        <img src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
-        <div>
-          <h1>01</h1>
-          <h1></h1>Reviving Retro PCs
-        What happens when old PCs are given modern upgrades?
+    <section class="lg:flex lg:flex-row my-16">
+      <div class="flex py-3">
+        <img src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs" class="object-cover w-1/4">
+        <div class="p-4 w-3/4">
+          <h1 class="text-4xl text-soft-red">01</h1>
+          <h1><a href="#" class="hover:text-soft-red">Reviving Retro PCs</a></h1>
+          <p>What happens when old PCs are given modern upgrades?</p>
         </div>
         
       </div>
-      <div class="flex">
-        <img src="assets/images/image-top-laptops.jpg" alt="image-top-laptops">
-        <h1>02</h1>
-        Top 10 Laptops of 2022
-        Our best picks for various needs and budgets.
+      <div class="flex py-3">
+        <img src="assets/images/image-top-laptops.jpg" alt="image-top-laptops" class="object-cover w-1/4">
+        <div class="p-4 w-3/4">
+          <h1 class="text-4xl text-soft-red">02</h1>
+          <h1><a href="#" class="hover:text-soft-red">Top 10 Laptops of 2022</a></h1>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
       </div>
-      <div class="flex">
-        <img src="assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
-        <h1>03</h1>
-        The Growth of Gaming
-        How the pandemic has sparked fresh opportunities.
+      <div class="flex py-3">
+        <img src="assets/images/image-gaming-growth.jpg" alt="image-gaming-growth" class="object-cover w-1/4">
+        <div class="p-4 w-3/4">
+          <h1 class="text-4xl text-soft-red">03</h1>
+          <h1><a href="#" class="hover:text-soft-red">The Growth of Gaming</a></h1>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
       </div>
 
-    </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </section>
+  </section>
+  <div class="attribution pb-4">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:text-soft-red">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/zoetlam" class="hover:text-soft-red">Zoe T.Lam</a>.</p>
   </div>
   <script src="assets/js/index.js"></script>
 </body>

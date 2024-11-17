@@ -3,9 +3,18 @@
 @tailwind utilities;
 @layer base {
     h1 {
-      @apply text-4xl; /* Use any Tailwind utility class */
+      @apply text-lg font-bold; /* Use any Tailwind utility class */
+    }
+    p{
+        @apply text-dark-grayish-blue;
     }
     #menu li {
         @apply px-4 hidden lg:block hover:text-soft-red; /* Use any Tailwind utility class */
+      }
+    #off-screen-menu ul li {
+        @apply text-2xl py-2;
+      }
+      #feature p{
+        @apply text-grayish-blue;
       }
   }

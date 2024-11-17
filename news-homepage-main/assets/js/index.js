@@ -1,6 +1,8 @@
-const hamMenu = document.querySelector("#toggle-icon");
-const offScreenMenu = document.querySelector(".off-screen-menu");
-hamMenu.addEventListener("click", function () {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
-});
+const sideMenu = document.querySelector("#off-screen-menu");
+function menuShowUp(){
+    sideMenu.classList.remove("right-[-100%]");
+}
+const closeBtn = document.querySelector("#closeButton");
+function closeMenu(){
+    sideMenu.classList.add("right-[-100%]");
+}
