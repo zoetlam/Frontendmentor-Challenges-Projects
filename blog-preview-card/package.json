@@ -1,0 +1,15 @@
+{
+  "name": "blog-preview-card",
+  "version": "1.0.0",
+  "description": "Using this design file will help you practice building projects in the same way professionals do. Seeing the details in the design will help you improve your accuracy and build projects faster.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch"
+  },
+  "author": "zoetlam",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
