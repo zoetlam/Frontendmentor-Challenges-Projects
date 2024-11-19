@@ -11,11 +11,18 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Frontend Mentor | Blog Preview Card</title>
     <style>
-        .attribution a { color: hsl(228, 45%, 44%); };
+        .attribution a { color: hsl(228, 45%, 44%); }
+        .container {
+            box-shadow: 8px 8px #000;
+            transition: box-shadow 0.5s ease-in-out;
+            }
+        .container:hover {
+            box-shadow: 12px 15px #000;
+        }
       </style>
   </head>
   <body class="text-gray-950 bg-main-yellow max-h-screen">
-    <div class="container w-[327px] md:w-96 mx-auto p-6 font-figtree border-gray-900 border-2 rounded-[1.25rem] bg-white mt-14 group" style="box-shadow: 8px 8px #000">
+    <div class="container w-[327px] md:w-96 mx-auto p-6 font-figtree border-gray-900 border-2 rounded-[1.25rem] bg-white mt-14 group">
       <img src="assets/images/blog-image.png" alt="blog-image" class="w-100 mb-6"/>
       <p class="bg-main-yellow px-3 py-1 w-5-125 font-bold text-sm rounded mb-3" style="text-shadow: 1px 1px 1px #6B6B6B;">Learning</p>
       <p class="text-sm mb-3">Published 21 Dec 2023</p>
