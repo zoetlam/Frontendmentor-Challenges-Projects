@@ -35,3 +35,9 @@ Challenge [link](https://www.frontendmentor.io/challenges/base-apparel-coming-so
 <img src="/requirement/news-homepage-main.jpg" alt="image" width="600" height="auto">
 
 Challenge [link](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/news-homepage-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/news-homepage-main/)
+
+# Blog Preview Card.png
+
+<img src="/requirement/blog-preview-card.png" alt="image" width="600" height="auto">
+
+Challenge [link](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/blog-preview-card/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/blog-preview-card/)
