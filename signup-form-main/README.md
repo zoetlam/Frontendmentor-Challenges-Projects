@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message
 
-![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Newsletter sign-up form with success message coding challenge](.././requirement/signup-form-main.jpg)
 
 ## Welcome! 👋
 This repository contains a solution for the Sign Up Page challenge from [Frontend Mentor](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-cGr4fAkDE7). The challenge involves creating a sign-up form using HTML, CSS, and JavaScript based on the design given in the **design** folder.

@@ -44,6 +44,6 @@ Challenge [link](https://www.frontendmentor.io/challenges/blog-preview-card-ckPa
 
 # Profile Card Component
 
-<img src="/requirement/profile-card-component-main.png" alt="image" width="600" height="auto">
+<img src="/requirement/profile-card-component-main.jpg" alt="image" width="600" height="auto">
 
 Challenge [link](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/profile-card-component-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/profile-card-component-main/)
