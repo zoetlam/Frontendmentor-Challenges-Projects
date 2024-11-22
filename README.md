@@ -36,8 +36,14 @@ Challenge [link](https://www.frontendmentor.io/challenges/base-apparel-coming-so
 
 Challenge [link](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/news-homepage-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/news-homepage-main/)
 
-# Blog Preview Card.png
+# Blog Preview Card
 
 <img src="/requirement/blog-preview-card.png" alt="image" width="600" height="auto">
 
 Challenge [link](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/blog-preview-card/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/blog-preview-card/)
+
+# Profile Card Component
+
+<img src="/requirement/profile-card-component-main.png" alt="image" width="600" height="auto">
+
+Challenge [link](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/profile-card-component-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/profile-card-component-main/)
