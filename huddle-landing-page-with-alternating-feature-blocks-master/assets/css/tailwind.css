@@ -7,9 +7,21 @@
       @apply text-2xl font-bold mb-3; /* Use any Tailwind utility class */
     }
     .feature-items{
-        @apply border mt-8 rounded-[1rem] shadow-lg flex xl:flex-row flex-col justify-around items-center xl:p-10;
+        @apply border mt-8 rounded-[1rem] shadow-lg flex xl:flex-row flex-col justify-around items-center p-10;
     }
     .feature-items p{
         @apply text-grayish-blue;
+    }
+    .social-items{
+        @apply border p-2 rounded-full
+    }
+    .social-items:hover, a:hover{
+        @apply text-primary-pink border-primary-pink
+    }
+    .ft-items{
+        @apply px-2;
+    }
+    .ft-info{
+         padding: 10px 0;
     }
 }
