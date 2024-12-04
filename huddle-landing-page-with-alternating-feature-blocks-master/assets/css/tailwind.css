@@ -4,7 +4,7 @@
 
 @layer base {
     h1 {
-      @apply text-2xl font-bold mb-3; /* Use any Tailwind utility class */
+      @apply text-2xl font-bold mb-3 text-dark-cyan; /* Use any Tailwind utility class */
     }
     .feature-items{
         @apply border mt-8 rounded-[1rem] shadow-lg flex xl:flex-row flex-col justify-around items-center p-10;
