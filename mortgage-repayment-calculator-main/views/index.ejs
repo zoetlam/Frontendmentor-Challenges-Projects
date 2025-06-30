@@ -1,0 +1,86 @@
+<%- include("partials/header.ejs") %>
+  <div class="col-6">
+    <div class="row">
+      <h2 style="font-weight: 700; margin: 0;">Mortgage Calculator</h2>
+      <span class="clear-link" onclick="document.getElementById('mortgageForm').reset();">Clear All</span>
+    </div>
+    <form action="#" id="mortgageForm">
+      <!-- Mortgage Amount -->
+      <label for="amount">Mortgage Amount</label>
+      <div class="input-group">
+        <span class="input-prefix">£</span>
+        <input type="number" id="asmount" name="amount" placeholder="Enter amount" >
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <!-- Mortgage Term -->
+          <label for="term">Mortgage Term</label>
+          <div class="input-group">
+            <input type="number" id="term" name="term" placeholder="Years">
+            <span class="input-suffix">years</span>
+          </div>
+        </div>
+        <div class="col-6" style="margin-left: 20px;">
+          <!-- Interest Rate -->
+          <label for="">Interest Rate</label>
+          <div class="input-group">
+            <input type="number" id="interest" name="interest" placeholder="Rate" step="0.01">
+            <span class="input-suffix">%</span>
+          </div>
+        </div>
+        
+
+        
+      </div>
+      
+      
+
+      <!-- Mortgage Type -->
+      <label>Mortgage Type</label>
+      <div class="radio-group">
+        <div class="radio-item">
+          <input type="radio" id="mtype1" name="mortgageType" value="repayment" checked>
+          <label for="mtype1">Repayment</label>
+        </div>
+        <div class="radio-item">
+          <input type="radio" id="mtype2" name="mortgageType" value="interest-only">
+          <label for="mtype2">Interest Only</label>
+        </div>
+        
+      </div>
+      
+
+      <!-- Submit button -->
+      <button>Calculate Repayments</button>
+    </form>
+
+    
+  </div>
+  
+
+  <!-- Empty results start -->
+  <div class="col-6">
+    Results shown here
+
+  Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be.
+  </div>
+  
+
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+
+  <!-- Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term -->
+
+  <!-- Completed results end -->
+  
+  <%- include("partials/footer.ejs") %>
+  
