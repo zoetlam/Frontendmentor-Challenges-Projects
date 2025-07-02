@@ -1,5 +1,5 @@
 <%- include("partials/header.ejs") %>
-  <div class="col-6">
+  <section class="col-6">
     <div class="row">
       <h2 style="font-weight: 700; margin: 0;">Mortgage Calculator</h2>
       <span class="clear-link" onclick="document.getElementById('mortgageForm').reset();">Clear All</span>
@@ -51,34 +51,46 @@
       
 
       <!-- Submit button -->
-      <button>Calculate Repayments</button>
+      <button><i class="fa-solid fa-calculator"></i> Calculate Repayments</button>
     </form>
 
     
-  </div>
+  </section>
   
 
   <!-- Empty results start -->
-  <div class="col-6">
-    Results shown here
-
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
-  </div>
+  <section class="col-6" id="resultFrame">
+    <div class="center-text" id="default-frame" style="display: none">
+      <img src="/images/illustration-empty.svg" alt="">
+      <h2>Results shown here</h2>
+      <p>
+        Complete the form and click “calculate repayments” to see what
+        your monthly repayments would be.
+      </p>
+    </div>
+    <div id="result">
+      <h2>Your results</h2>
+      <p>
+        Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.
+      </p>
+      <div class="result-box">
+        <p>Your monthly repayments</p>
+        <h1>£1,797.74</h1>
+        <hr style="border-color: var(--slate-300);">
+        <p>Total you'll repay over the term</p>
+        <h2>£593,322.94</h2>
+      </div>
+  
+    </div>
+    
+  </section>
   
 
   <!-- Empty results end -->
 
   <!-- Completed results start -->
 
-  <!-- Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term -->
+  
 
   <!-- Completed results end -->
   
