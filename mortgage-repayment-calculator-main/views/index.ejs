@@ -4,13 +4,14 @@
       <h2 style="font-weight: 700; margin: 0;">Mortgage Calculator</h2>
       <a href="/" class="clear-link">Clear All</a>
     </div>
-    <form action="/submit" method="POST" id="mortgageForm">
+    <form action="/submit" method="POST" id="mortgageForm" >
       <!-- Mortgage Amount -->
       <label for="amount">Mortgage Amount</label>
       <div class="input-group">
         <span class="input-prefix">£</span>
-        <input type="number" id="asmount" name="amount" placeholder="Enter amount" >
+        <input type="number" id="amount" name="amount" placeholder="Enter amount" >
       </div>
+      <p class="error-message" id="amount-error"></p>
       <div class="row">
         <div class="col-6">
           <!-- Mortgage Term -->
@@ -27,6 +28,14 @@
             <input type="number" id="interest" name="interest" placeholder="Rate" step="0.01">
             <span class="input-suffix">%</span>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+         <p class="error-message" id="term-error"></p>
+        </div>
+        <div class="col-6" style="margin-left: 40px;">
+          <p class="error-message" id="interest-error"></p>
         </div>
       </div>
       <!-- Mortgage Type -->
@@ -83,6 +92,9 @@
       <!-- Completed results end -->
     <% } %>
   </section>
+
+  <!-- JS: Client-side validation -->
+  <script src="/scripts/validate.js"></script>
 
   <%- include("partials/footer.ejs") %>
   

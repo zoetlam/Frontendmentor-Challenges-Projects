@@ -62,7 +62,7 @@ label{
     display: block;
     font-weight: 500;
     font-size: 14px;
-    margin: 30px 0 10px;
+    margin: 10px 0;
     color: var(--slate-700);
 }
 .input-group{
@@ -139,6 +139,7 @@ button:hover{
     background: #fafae0;
 }
 button{
+    margin-top: 10px;
     border: 1px solid var(--lime);
     background-color: var(--lime);
     border-radius: 22px;
@@ -189,9 +190,19 @@ hr{
 #default-frame {
   width: 100%;
   flex: 1;
-  padding: 5rem;
+  padding: 4rem;
 }
 
+/* check error function */
+.input-error {
+  border: 1px solid var(--red);
+}
+
+.error-message {
+  color: var(--red);
+  font-size: 14px;
+  margin-top: 5px;
+}
 
 footer{
     margin-top: 30px;
