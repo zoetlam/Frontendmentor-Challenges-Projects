@@ -42,16 +42,21 @@ main{
 main > *{
     padding: 2.5rem;
 }
+
 .row{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 /* input section */
+a.clear-link{
+    text-decoration: none;
+}
 .clear-link{
-    text-decoration: underline;
     cursor: pointer;
     font-size: 14px;
+    color: var(--slate-700);
+    text-decoration: underline;
 }
 label{
     display: block;
@@ -152,10 +157,12 @@ button i{
     color: var(--white);
     border-radius: 0px 30px 30px 60px;
     display: flex;
-    align-items: center;
 }
 #resultFrame:has(#result) {
     align-items: flex-start;
+}
+#resultFrame:has(#default-frame) {
+    align-items: center;
 }
 #resultFrame p{
     color: var(--slate-300);
@@ -179,6 +186,12 @@ button i{
 hr{
     margin: 30px 0;
 }
+#default-frame {
+  width: 100%;
+  flex: 1;
+  padding: 5rem;
+}
+
 
 footer{
     margin-top: 30px;
