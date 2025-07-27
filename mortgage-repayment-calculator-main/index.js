@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 // Middleware
-app.use(express.static("public")); // Cho phép truy cập file tĩnh: CSS, images,...
+app.use(express.static(path.join(__dirname, "public"))); // Cho phép truy cập file tĩnh: CSS, images,...
 app.use(bodyParser.urlencoded({ extended: true })); // Đọc dữ liệu từ form
 
 // GET route - Trang lần đầu load, chưa có kết quả
