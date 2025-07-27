@@ -18,7 +18,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public"))); // Cho phép truy cập file tĩnh: CSS, images,...
 app.use(bodyParser.urlencoded({ extended: true })); // Đọc dữ liệu từ form
 
-// GET route - Trang lần đầu load, chưa có kết quả
+// GET route
 app.get("/", (req, res) => {
   res.render("index.ejs", {
     showResult: false,
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// POST route - Khi user submit form
+// POST route
 app.post("/submit", (req, res) => {
   const amount = parseFloat(req.body.amount);
   const term = parseFloat(req.body.term);
