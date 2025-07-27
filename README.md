@@ -1,79 +1,67 @@
-# 🌟 Frontend Mentor Challenges – Projects by Zoe T. Lam
+# Frontend Mentor Challenges – Projects by Zoe T. Lam
 
-This repository contains a collection of **frontend challenges** from [Frontend Mentor](https://frontendmentor.io), where I practice and improve my HTML, CSS, and JavaScript skills.  
+This repository contains a collection of **frontend challenges** from [Frontend Mentor](https://frontendmentor.io), where I practice and improve my frontend development skills.  
 Each project is built with **pixel-perfect precision**, focusing on clean code, responsiveness, and accessibility.
 
-# QR Code Component
-<img src="/requirement/qr-code-component.png" alt="image" width="600" height="auto">
+---
 
-Challenge [link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/qr-code-component-main) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/qr-code-component-main/)
+## 🚀 **Project List**
+
+| #  | Project Name                           | Live Demo                                                                                                         | Tech Used                          |
+|----|----------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+| 1  | Mortgage Repayment Calculator     | [Vercel Live](https://mortgage-repayment-calculator-vert.vercel.app)                                             | Node.js, Express, EJS, Vanilla JS, CSS |
+| 2  | Interactive Card Details Form          | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/interactive-card-details-form/)             | HTML, CSS, Vanilla JS             |
+| 3  | News Homepage                          | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/news-homepage-main/)                        | HTML, CSS, Vanilla JS             |
+| 4  | Base Apparel Coming Soon               | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/base-apparel-coming-soon-master/)           | HTML, CSS, Vanilla JS             |
+| 5  | Signup Form Component                  | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/signup-form-main/)                          | HTML, CSS, Vanilla JS             |
+| 6  | Blogr Landing Page                     | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/blogr-landing-page-main/)                   | HTML, CSS (Flexbox/Grid)          |
+| 7  | Huddle Landing Page                    | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/huddle-landing-page-with-master/)           | HTML, CSS                         |
+| 8  | Blog Preview Card                      | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/blog-preview-card/)                         | HTML, CSS, Bootstrap              |
+| 9  | Profile Card Component                 | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/profile-card-component-main/)               | HTML, CSS, Bootstrap              |
+|10  | QR Code Component                      | [Live](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/qr-code-component-main/)                    | HTML, CSS, Tailwind CSS           |
+
 
 ---
 
-# Blogr landing page
-<img src="/requirement/blogr-landing-page.jpg" alt="image" width="600" height="auto">
+## 🧰 **Tools, Libraries & Methodologies**
 
-Challenge [link](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/blogr-landing-page-main) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/blogr-landing-page-main/)
+### 🔹 Tools
+- **Vercel** – Deployment & hosting
+- **GitHub Pages** – Static hosting for small projects
+- **VS Code** – Code editor
+- **Chrome DevTools** – Debugging & responsive testing
 
----
+### 🔹 Libraries / Frameworks
+- **EJS** – Dynamic templating
+- **Express.js** – Server-side framework for Node.js
+- **Bootstrap** – Used for quick UI layouts on some components
+- **Tailwind CSS** – Utility-first styling for fast prototyping
+- **Body-Parser** – Middleware for form parsing
+- **FontAwesome** – UI icons
 
-# Interactive Card Details Form
-
-<img src="/requirement/interactive-card-details-form.jpg" alt="image" width="600" height="auto">
-
-Challenge [link](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/interactive-card-details-form/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/interactive-card-details-form/)
-
----
-
-# Newsletter sign-up form with success message
-
-<img src="/requirement/signup-form-main.jpg" alt="image" width="600" height="auto">
-
-Challenge [link](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/signup-form-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/signup-form-main/)
-
----
-
-# Base Apparel coming soon page
-
-<img src="/requirement/base-apparel-coming-soon-master.jpg" alt="image" width="600" height="auto">
-
-Challenge [link](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/base-apparel-coming-soon-master/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/base-apparel-coming-soon-master/)
+### 🔹 Methodologies
+- **Pixel-perfect coding** – UI matches design specs
+- **Modular structure** – clean and maintainable
+- **Client-side validation** – improved UX
+- **Mobile-first & Responsive Design**
 
 ---
 
-# News homepage
-
-<img src="/requirement/news-homepage-main.jpg" alt="image" width="600" height="auto">
-
-Challenge [link](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/news-homepage-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/news-homepage-main/)
-
----
-
-# Blog Preview Card
-
-<img src="/requirement/blog-preview-card.png" alt="image" width="600" height="auto">
-
-Challenge [link](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/blog-preview-card/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/blog-preview-card/)
+## 🎯 **Learning Goals**
+- Strengthen frontend skills (HTML, CSS, JS, Tailwind, Bootstrap)
+- Learn backend basics with Node.js & Express
+- Practice clean code & reusable components
+- Build UI projects with responsive & accessible design
 
 ---
 
-# Profile Card Component
+## 📬 **About Zoe**
 
-<img src="/requirement/profile-card-component-main.jpg" alt="image" width="600" height="auto">
-
-Challenge [link](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) &nbsp;&nbsp;&nbsp; Source Code [View](https://github.com/zoetlam/Frontendmentor-Challenges-Projects/tree/main/profile-card-component-main/) &nbsp;&nbsp;&nbsp; Live demo [view](https://zoetlam.github.io/Frontendmentor-Challenges-Projects/profile-card-component-main/)
-
----
-
-# Mortgage Repayment Calculator
-
-<img src="/requirement/mortgage-repayment-calculator.jpg" alt="image" width="600" height="auto">
-
-- 🛠 **Tech:** Node.js, Express, EJS, Vanilla JS, Custom CSS
-- ✅ Features: 
-  - Calculates monthly repayments (Repayment & Interest-Only)
-  - Client-side validation & error states
-  - Persists user input across pages
-- 🔗 [Live Demo (Vercel)](https://mortgage-repayment-calculator-vert.vercel.app)
+💁‍♀️ **Zoe T. Lam** – Frontend Developer passionate about UI/UX and web technologies.  
+🔗 [GitHub](https://github.com/zoetlam) | 🌍 [Portfolio Coming Soon]  
+> 💬 **"Keep learning – one step, one pixel at a time."** – Zoe
 
 ---
+
+⭐️ **If you like these projects, give this repo a star!**  
+Your support motivates me to keep learning and building 🚀
