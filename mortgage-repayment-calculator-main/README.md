@@ -1,10 +1,8 @@
-# Frontend Mentor - Mortgage repayment calculator
-
-![Design preview for the Mortgage repayment calculator coding challenge](./preview.jpg)
-
 # 🏡 Mortgage Calculator Web App
 
 A simple and elegant mortgage calculator built using **Node.js**, **Express**, and **EJS**
+
+![Design preview for the Mortgage repayment calculator coding challenge](./preview.jpg)
 
 ## ✨ Features
 
@@ -28,6 +26,11 @@ A simple and elegant mortgage calculator built using **Node.js**, **Express**, a
 | UI Behavior  | Vanilla JS        |
 | Hosting-ready| GitHub + Vercel (or similar) |
 
+### 🔹 Methodologies
+- **Modular file structure** – Separation of views, assets, and server logic
+- **Client-side validation** – Using Vanilla JavaScript to enhance UX
+- **Progressive Enhancement** – Ensuring core UI works before enhancements
+- **Server-side Rendering (SSR)** – Dynamic rendering via EJS templates
 
 🙋‍♀️ About Me
 
